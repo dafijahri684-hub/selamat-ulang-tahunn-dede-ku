@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Little Sister 💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- WELCOME SCREEN -->
+<section id="welcome">
+  <div class="fx" id="welcomeFx"></div>
+  <div class="welcome-box">
+    <div class="pulse-heart">❤</div>
+    <h1 class="script">Happy Birthday, My Little Sister!</h1>
+    <p>Today is your special day, and you deserve all the happiness in the world.</p>
+    <button class="btn" id="openBtn">Open Your Surprise ❤️</button>
+  </div>
+</section>
+
+<!-- MUSIC PLAYER -->
+<div id="player" class="hidden">
+  <button id="musicBtn" aria-label="Putar atau jeda musik">♫</button>
+  <input type="range" id="volume" min="0" max="1" step="0.05" value="0.6" aria-label="Volume">
+  <span id="musicNote"></span>
+</div>
+<audio id="bgm" src="Billie_Eilish_-_Birds_of_feather_(mp3.pm).mp3" loop preload="auto"></audio>
+
+<main id="main" class="hidden">
+
+  <!-- HERO -->
+  <section id="hero" class="section">
+    <div class="fx" id="heroFx"></div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="small">Happy Birthday, and congratulations on turning 17! May your 17th year be filled with happiness, beautiful memories, endless love, and wonderful adventures. Keep shining, little sister!💗.</p>
+        <h1 class="script big">Happy Birthday, Princess!</h1>
+        <h2 class="name glow" data-name>Nama Adik</h2>
+        <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+        <a href="#letter" class="btn">Read My Letter</a>
+      </div>
+      <div class="frame">
+        <img src="foto utama.jpeg" alt="Foto utama adik" class="ph">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2 class="title reveal">Our Memories</h2>
+    <div class="grid">
+      <figure class="reveal"><img class="ph" src="senyum favoritku.jpeg" alt="Kenangan 1" loading="lazy"><figcaption>Senyummu, favoritku</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="hari hari yang ceria.jpeg" alt="Kenangan 2" loading="lazy"><figcaption>Hari-hari yang ceria</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="bersama keluarga.jpeg" alt="Kenangan 3" loading="lazy"><figcaption>Bersama keluarga</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="kenangan foto bersama mamah.jpeg" alt="Kenangan 4" loading="lazy"><figcaption>kenangan foto bersama mamah</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="kenangan foto bersama ayah.jpeg" alt="Kenangan 5" loading="lazy"><figcaption>kenangan foto bersama ayah</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="moment manis.jpeg" alt="Kenangan 6" loading="lazy"><figcaption>Momen manis</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="tumbuh begitu cantik.jpeg" alt="Kenangan 7" loading="lazy"><figcaption>Kamu tumbuh begitu cantik</figcaption></figure>
+      <figure class="reveal"><img class="ph" src="selalu bersamamu.jpeg" alt="Kenangan 8" loading="lazy"><figcaption>Selalu bersamamu</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section id="letter" class="section">
+    <h2 class="title reveal">Birthday Letter</h2>
+    <div class="letter-wrap reveal">
+      <button class="envelope" id="envelope" aria-expanded="false">
+        <span class="flap"></span><span class="seal">❤</span>
+        <span class="tap">Ketuk untuk membuka surat</span>
+      </button>
+      <article class="paper" id="paper">
+        <p class="script dear">Untuk <span data-name>Adik</span> tersayang,</p>
+        <p>Selamat ulang tahun untuk adik perempuan tersayang.</p>
+        <p>Hari ini adalah hari yang spesial karena seseorang yang sangat berharga telah bertambah usia. Semoga setiap langkahmu selalu dipenuhi kebahagiaan, kesehatan, keberuntungan, dan hal-hal indah.</p>
+        <p>Teruslah menjadi pribadi yang baik, kuat, ceria, dan jangan pernah berhenti mengejar impianmu.</p>
+        <p>Mungkin aku tidak selalu bisa mengungkapkan rasa sayang melalui kata-kata, tetapi ketahuilah bahwa kamu adalah salah satu orang yang sangat berharga dalam hidupku.</p>
+        <p>Jangan pernah merasa sendirian, karena kamu selalu punya keluarga yang menyayangimu.</p>
+        <p class="script sign">Happy Birthday, Little Sister! ❤️</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WISHES -->
+  <section id="wishes" class="section">
+    <h2 class="title reveal">Special Wishes</h2>
+    <ul class="wishes">
+      <li class="reveal"><span>🌸</span>Semoga selalu bahagia.</li>
+      <li class="reveal"><span>💗</span>Semoga selalu diberikan kesehatan.</li>
+      <li class="reveal"><span>🌷</span>Semoga semua impianmu tercapai.</li>
+      <li class="reveal"><span>💖</span>Semoga setiap langkahmu dipenuhi keberuntungan.</li>
+      <li class="reveal"><span>🌹</span>Semoga selalu dikelilingi orang-orang baik.</li>
+    </ul>
+  </section>
+
+  <!-- SURPRISE -->
+  <section id="surprise" class="section">
+    <h2 class="title reveal">A Little Surprise</h2>
+    <button class="btn" id="surpriseBtn">Click for a Surprise</button>
+    <div id="surpriseMsg" class="surprise-msg">
+      <h3 class="script glow">You Are Loved More Than You Know!</h3>
+      <p><span data-name>Adik</span>, di umur 17 ini, mas bangga sekali padamu. Terima kasih sudah menjadi adik terbaik. mas sayang kamu, selalu. 💗</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="hearts-row">❤ ❤ ❤</div>
+    <p class="script glow">Made with Love ❤️</p>
+    <p>For My Dearest Little Sister</p>
+    <p>Forever Your Brother.</p>
+  </footer>
+</main>
+
+<div id="lightbox" class="hidden" role="dialog" aria-modal="true">
+  <button id="lbClose" aria-label="Tutup">✕</button>
+  <button id="lbPrev" aria-label="Sebelumnya">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button id="lbNext" aria-label="Berikutnya">›</button>
+</div>
+<canvas id="confetti"></canvas>
+
+<script src="scipt.js"></script>
+</body>
+</html>
